@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Feliz Día del Amor y la Amistad 🌷</title>
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(to bottom, #ffd1dc, #fff0f5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .card {
+      background: white;
+      padding: 40px;
+      border-radius: 25px;
+      text-align: center;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+      position: relative;
+    }
+
+    h1 {
+      color: #e91e63;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #555;
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .ramo {
+      display: flex;
+      gap: 50px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .tulipan {
+      position: relative;
+      width: 120px;
+      animation: flotar 3s ease-in-out infinite;
+    }
+
+    @keyframes flotar {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+
+    .petalos {
+      position: relative;
+      height: 120px;
+    }
+
+    .petalo {
+      position: absolute;
+      width: 60px;
+      height: 90px;
+      background: #e91e63;
+      border-radius: 50% 50% 40% 40%;
+    }
+
+    .petalo:nth-child(1) {
+      left: 30px;
+      z-index: 2;
+    }
+
+    .petalo:nth-child(2) {
+      left: 0;
+      transform: rotate(-15deg);
+      background: #f06292;
+    }
+
+    .petalo:nth-child(3) {
+      left: 60px;
+      transform: rotate(15deg);
+      background: #f06292;
+    }
+
+    .tallo {
+      width: 12px;
+      height: 140px;
+      background: #4caf50;
+      margin: auto;
+      border-radius: 5px;
+    }
+
+    .hoja {
+      position: absolute;
+      width: 20px;
+      height: 80px;
+      background: #66bb6a;
+      border-radius: 50%;
+      top: 140px;
+    }
+
+    .hoja1 {
+      left: -10px;
+      transform: rotate(-25deg);
+    }
+
+    .hoja2 {
+      right: -10px;
+      transform: rotate(25deg);
+    }
+
+    /* Botón de música */
+    .musica {
+      margin-top: 25px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+    <h1>Feliz Día del Amor y la Amistad</h1>
+    <p>
+      Este pequeño detalle está hecho con mucho cariño  
+      y un poquito de código 💗
+    </p>
+
+    <div class="ramo">
+      <div class="tulipan">
+        <div class="petalos">
+          <div class="petalo"></div>
+          <div class="petalo"></div>
+          <div class="petalo"></div>
+        </div>
+        <div class="tallo"></div>
+        <div class="hoja hoja1"></div>
+        <div class="hoja hoja2"></div>
+      </div>
+
+      <div class="tulipan">
+        <div class="petalos">
+          <div class="petalo"></div>
+          <div class="petalo"></div>
+          <div class="petalo"></div>
+        </div>
+        <div class="tallo"></div>
+        <div class="hoja hoja1"></div>
+        <div class="hoja hoja2"></div>
+      </div>
+
+      <div class="tulipan">
+        <div class="petalos">
+          <div class="petalo"></div>
+          <div class="petalo"></div>
+          <div class="petalo"></div>
+        </div>
+        <div class="tallo"></div>
+        <div class="hoja hoja1"></div>
+        <div class="hoja hoja2"></div>
+      </div>
+    </div>
+
+    <!-- MÚSICA -->
+    <div class="musica">
+      <audio controls autoplay loop>
+        <source src="musica.mp3" type="audio/mpeg">
+        Tu navegador no soporta audio.
+      </audio>
+    </div>
+
+  </div>
+
+</body>
+</html>

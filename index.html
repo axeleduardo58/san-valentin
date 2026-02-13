@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Feliz Día del Amor y la Amistad 🌷</title>
+  <title>Para Fer 💗</title>
 
   <style>
     body {
@@ -110,21 +110,16 @@
       right: -10px;
       transform: rotate(25deg);
     }
-
-    /* Botón de música */
-    .musica {
-      margin-top: 25px;
-    }
   </style>
 </head>
 
-<body>
+<body onclick="document.getElementById('bgmusic').play()">
 
   <div class="card">
-    <h1>Feliz Día del Amor y la Amistad</h1>
+    <h1>Feliz Día del Amor y la Amistad, Fer 💗</h1>
     <p>
       Este pequeño detalle está hecho con mucho cariño  
-      y un poquito de código 💗
+      y un poquito de código, espero que te la pases bonito tqm 💗
     </p>
 
     <div class="ramo">
@@ -162,13 +157,9 @@
       </div>
     </div>
 
-    <!-- MÚSICA -->
-    <div class="musica">
-      <audio controls autoplay loop>
-        <source src="musica.mp3" type="audio/mpeg">
-        Tu navegador no soporta audio.
-      </audio>
-    </div>
+    <audio id="bgmusic" autoplay loop>
+      <source src="musica.mp3" type="audio/mpeg">
+    </audio>
 
   </div>
 
